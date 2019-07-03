@@ -4,7 +4,9 @@
   "description": "Discord-Bot Framework connector that uses Discord.js and Bot Framework's Direct Line to connect Bot Framework bots to Discord.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "chatbots",
@@ -15,7 +17,7 @@
     "discord.js"
   ],
   "author": "Steven Gum",
-  "bugs" : {
+  "bugs": {
     "url": "https://github.com/stevengum97/DiscordConnector/issues"
   },
   "repository": {
@@ -29,6 +31,8 @@
     "request": "2.81.0",
     "request-promise": "4.2.1",
     "websocket": "1.0.24",
-    "uws": "8.14.1"
-  }
+    "uws": "8.14.1",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
